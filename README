@@ -1,3 +1,5 @@
+A compiler for a bayesian statistical language which I wrote at university.
+
 To compile the compiler and runtime system, just type "make"
 To compile a program, run "./bayesc.native <filename>"
 To run a compiled program, run "java <filename without .class>". This may require changing your classpath to include "." and "runtime". Alternatively, add the "-cp .:runtime" flag.
