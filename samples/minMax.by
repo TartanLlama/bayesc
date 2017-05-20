@@ -1,0 +1,4 @@
+bayesian minMax where
+let min(x,y,) = if x<y then sample Bernoulli x else sample Bernoulli y
+let max(x,y,) = if x>y then sample Bernoulli x else sample Bernoulli y
+max(10%,20%,) & min(10%,20%,)

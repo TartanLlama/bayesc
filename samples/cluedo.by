@@ -1,0 +1,8 @@
+bayesian cluedo where
+let msScarletDunnit = sample Bernoulli 30%
+
+let withGun = if msScarletDunnit then sample Bernoulli 3%
+    		                 else sample Bernoulli 80%
+
+observe (withGun = true)
+msScarletDunnit

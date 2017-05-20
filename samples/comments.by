@@ -1,0 +1,16 @@
+;;;; Top level comments should have four semi-colons, like lisp!
+
+<[This is a multi-line comment!
+  <[
+     We can be <[nested]> ;with semi colons if you don't close on the same line
+  ]>
+]>
+
+;;; Single-line comments can also be nested; semi-colons are useful
+
+bayesian comments <[I'm a sneaky comment]>where
+;;; Section comments should have three semi-colons
+;;; This section has some code and more comments
+
+;; Comments with two semi-colons apply to the next block of code
+1 = 1 ;Don't write a space after single semi-colon comments and put them in-line

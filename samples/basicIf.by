@@ -1,0 +1,2 @@
+bayesian basicIf where
+if 1=1 then 1=2 else 1=1

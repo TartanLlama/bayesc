@@ -1,0 +1,5 @@
+bayesian threeSamples where
+let x = sample Bernoulli 50%
+let y = sample Bernoulli 50%
+let z = if x&y then sample Bernoulli 100% else sample Bernoulli 0%
+z

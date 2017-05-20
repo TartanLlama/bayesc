@@ -1,0 +1,5 @@
+bayesian threeFunctions where
+let two(x,) = sample Bernoulli 2*x
+let mul(x,y,) = sample Bernoulli x*y
+let min(x,y,) = if x > y then sample Bernoulli y else sample Bernoulli x
+two(25%,) | mul(15%,4,) & min(100%,50%,)

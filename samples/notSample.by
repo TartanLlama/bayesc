@@ -1,0 +1,3 @@
+bayesian notSample where
+let x = sample Bernoulli 20%
+not x

@@ -1,0 +1,4 @@
+bayesian ifSample where
+let a = sample Bernoulli 80%
+let x = if a then sample Bernoulli 30% else sample Bernoulli 20%
+x

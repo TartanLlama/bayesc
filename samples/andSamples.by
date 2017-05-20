@@ -1,0 +1,4 @@
+bayesian andSamples where
+let x = sample Bernoulli 50%
+let y = sample Bernoulli 50%
+x&y

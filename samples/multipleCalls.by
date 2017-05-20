@@ -1,0 +1,3 @@
+bayesian multipleCalls where
+let twotimes(x,) = sample Bernoulli x*2
+twotimes(25%,) & twotimes(25%,) | twotimes(25%,)

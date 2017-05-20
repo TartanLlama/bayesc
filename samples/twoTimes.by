@@ -1,0 +1,3 @@
+bayesian twoTimes where
+let distr (p,) = sample Bernoulli (2*p)
+distr (5%,)

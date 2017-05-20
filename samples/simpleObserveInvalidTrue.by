@@ -1,0 +1,3 @@
+bayesian simpleObserveInvalidTrue where
+observe(1=2)
+1=1

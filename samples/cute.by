@@ -1,0 +1,25 @@
+  bayesian cute where
+  ;;Could be a cat, could be a lizard
+  let isCat = sample Bernoulli 50%
+
+  ;;Tiny things are cute
+  let isTiny = sample Bernoulli 20%
+
+  ;;Evidence could not be found of any fluffy lizards
+  let isFluffy(x,y,) = if isCat then sample Bernoulli x
+                                else sample Bernoulli y
+
+  let hasToungeOut = if isCat then sample Bernoulli 30%
+                              else sample Bernoulli 60%
+
+  ;;I imagine that some lizards might make some cute noises
+  let isMakingCuteNoises = if isCat then sample Bernoulli 40%
+                                    else sample Bernoulli 2%
+
+  let isDefecating = if isCat then sample Bernoulli 5%
+                              else sample Bernoulli 10%
+
+  ;;We believe to have ascertained that the animal is, indeed, a cat
+  observe (isCat)
+
+  not isDefecating & (isTiny | isFluffy(99%,0%,) | hasToungeOut | isMakingCuteNoises)

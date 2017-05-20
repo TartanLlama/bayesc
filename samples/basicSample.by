@@ -1,0 +1,3 @@
+bayesian basicSample where
+let x = sample Bernoulli 50%
+x
