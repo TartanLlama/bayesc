@@ -1,7 +1,5 @@
-A compiler for a bayesian statistical language which I wrote at university.
+A old compiler for a bayesian statistical language which I wrote at university.
 
 To compile the compiler and runtime system, just type "make"
 To compile a program, run "./bayesc.native <filename>"
 To run a compiled program, run "java <filename without .class>". This may require changing your classpath to include "." and "runtime". Alternatively, add the "-cp .:runtime" flag.
-
-Building the components and compiling and running all the test programs was tested on the school teaching servers. I cannot guarantee it will work on the honours lab machines, but I don't see a reason why it shouldn't.
